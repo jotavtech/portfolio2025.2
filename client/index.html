@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>João Martins | Retro Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+      
+      :root {
+        --background: 0 0% 100%;
+        --foreground: 20 14.3% 4.1%;
+        --neonPink: #FF2A6D;
+        --electricBlue: #05D9E8;
+        --cyberYellow: #F9F871;
+        --darkPurple: #1D1135;
+        --offWhite: #F5F5F5;
+      }
+      
+      /* Font families */
+      .font-vt323 {
+        font-family: 'VT323', monospace;
+      }
+      
+      .font-press-start {
+        font-family: 'Press Start 2P', cursive;
+      }
+      
+      /* Snap scrolling */
+      .snap-container {
+        scroll-snap-type: y mandatory;
+        height: 100vh;
+        overflow-y: scroll;
+      }
+      
+      .snap-section {
+        scroll-snap-align: start;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
+  </body>
+</html>
