@@ -13,6 +13,51 @@ const HeroSection = () => {
   
   return (
     <section id="home" className="snap-section relative grid-bg flex flex-col justify-center items-center h-screen overflow-hidden">
+      {/* Navigation/tabs at the top */}
+      <motion.div 
+        className="fixed top-0 left-0 w-full z-50 bg-darkPurple/80 backdrop-blur-sm py-4 px-6 border-b border-electricBlue/30"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="max-w-6xl mx-auto flex justify-center">
+          <motion.div 
+            className="flex flex-wrap justify-center gap-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <RetroButton 
+              color="neonPink"
+              onClick={() => scrollToElement("about")}
+            >
+              ABOUT
+            </RetroButton>
+            
+            <RetroButton 
+              color="electricBlue"
+              onClick={() => scrollToElement("skills")}
+            >
+              SKILLS
+            </RetroButton>
+            
+            <RetroButton 
+              color="cyberYellow"
+              onClick={() => scrollToElement("projects")}
+            >
+              PROJECTS
+            </RetroButton>
+            
+            <RetroButton 
+              color="offWhite"
+              onClick={() => scrollToElement("contact")}
+            >
+              CONTACT
+            </RetroButton>
+          </motion.div>
+        </div>
+      </motion.div>
+      
       {/* Retro visual elements */}
       <motion.div 
         className="absolute -top-10 -left-10 w-28 h-28 md:w-40 md:h-40 bg-neonPink rounded-full opacity-30"
@@ -51,7 +96,7 @@ const HeroSection = () => {
       
       {/* Main heading with glitch effect */}
       <motion.div
-        className="relative"
+        className="relative mt-16"
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -81,42 +126,6 @@ const HeroSection = () => {
         transition={{ duration: 0.8, delay: 0.4 }}
       >
         <TypeWriter texts={typewriterTexts} />
-      </motion.div>
-      
-      {/* Retro-style buttons */}
-      <motion.div 
-        className="flex flex-wrap justify-center gap-4"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.8 }}
-      >
-        <RetroButton 
-          color="neonPink"
-          onClick={() => scrollToElement("about")}
-        >
-          ABOUT
-        </RetroButton>
-        
-        <RetroButton 
-          color="electricBlue"
-          onClick={() => scrollToElement("skills")}
-        >
-          SKILLS
-        </RetroButton>
-        
-        <RetroButton 
-          color="cyberYellow"
-          onClick={() => scrollToElement("projects")}
-        >
-          PROJECTS
-        </RetroButton>
-        
-        <RetroButton 
-          color="offWhite"
-          onClick={() => scrollToElement("contact")}
-        >
-          CONTACT
-        </RetroButton>
       </motion.div>
       
       {/* Scroll down indicator */}
