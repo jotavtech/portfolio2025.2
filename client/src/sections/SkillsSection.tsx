@@ -7,15 +7,15 @@ const SkillsSection = () => {
   const frontendSkills = [
     { name: "HTML", percentage: 92 },
     { name: "CSS", percentage: 88 },
-    { name: "JavaScript", percentage: 85 },
+    { name: "JavaScript", percentage: 65 },
     { name: "React", percentage: 80 }
   ];
   
   const designSkills = [
-    { name: "Figma", percentage: 90 },
-    { name: "Framer", percentage: 85 },
-    { name: "UI Design", percentage: 82 },
-    { name: "Prototyping", percentage: 78 }
+    { name: "Figma", percentage: 100 },
+    { name: "Framer", percentage: 90 },
+    { name: "UI Design", percentage: 100},
+    { name: "Prototyping", percentage: 95 }
   ];
   
   const techBadges = [

@@ -7,16 +7,16 @@ const ContactSection = () => {
   const contactLinks = [
     {
       icon: "fa-envelope",
-      text: "joao@example.com",
-      href: "mailto:joao@example.com",
+      text: "martinsjoao1227@gmail.com",
+      href: "https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlDTRNtCkRDfBKfnTzvfMPzPWLxcnSGHdkwtzlZSlfwKpLvPCTXdcNWMrZLVBTPbcdlGSq",
       borderColor: "border-electricBlue",
       textColor: "text-electricBlue",
       hoverTextColor: "text-electricBlue"
     },
     {
       icon: "fa-github",
-      text: "github.com/joaomartins",
-      href: "https://github.com",
+      text: "github.com/jotavtech",
+      href: "https://github.com/jotavtech",
       borderColor: "border-neonPink",
       textColor: "text-neonPink",
       hoverTextColor: "text-neonPink"
@@ -91,7 +91,7 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
         >
           <div>
-            <h3 className="font-press-start text-xl text-electricBlue mb-6">CONNECT:</h3>
+            <h3 className="font-press-start text-xl text-electricBlue mb-6">CONTATE-ME:</h3>
             
             <div className="space-y-5 font-vt323 text-xl">
               {contactLinks.map((link, index) => (
@@ -132,8 +132,8 @@ const ContactSection = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <div className="font-vt323 text-lg text-offWhite p-4 bg-darkPurple border border-electricBlue/50">
-              <p className="text-electricBlue">&gt; Interested in working together?</p>
-              <p className="text-offWhite">&gt; Let's create something awesome!</p>
+              <p className="text-electricBlue">&gt; Interessado em trabalhar comigo?</p>
+              <p className="text-offWhite">&gt; Vamos criar algo incrível!</p>
               <p className="flex items-center">
                 <span className="text-neonPink mr-2">&gt;</span> 
                 <motion.span
