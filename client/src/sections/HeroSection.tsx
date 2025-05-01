@@ -84,7 +84,7 @@ const HeroSection = () => {
         }}
       />
 
-      {/* Main heading with glitch effect */}
+      {/* Main heading */}
       <motion.div
         className="relative mt-16"
         initial={{ opacity: 0, y: -30 }}

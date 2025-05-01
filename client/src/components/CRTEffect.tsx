@@ -26,7 +26,7 @@ const CRTEffect = () => {
         {/* Flicker effect */}
         <motion.div 
           className="absolute inset-0 bg-[rgba(18,16,16,0.1)]"
-          animate={{ opacity: [0.27, 0.34, 0.23, 0.9, 0.18, 0.83, 0.65] }}
+          animate={{ opacity: [0.27, 0.80] }}
           transition={{ 
             duration: 0.15, 
             repeat: Infinity,
